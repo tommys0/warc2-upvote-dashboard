@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Upvote = () => {
+const VoteCounter = () => {
         const [count, setCount] = useState(0);
 
         const increment = () => {
@@ -17,14 +17,14 @@ const Upvote = () => {
         return (
             <div>
                     <button onClick={increment}>
-                            Increment
+                            Upvote
                     </button>
                     <button onClick={decrement}>
-                            Decrement
+                            Downvote
                     </button>
                     <div>{count}</div>
             </div>
         )
 }
 
-export default Upvote;
+export default VoteCounter;
